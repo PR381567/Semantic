@@ -1,0 +1,424 @@
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    /*margin: 0;*/
+    height: 100vh;
+    scroll-behavior: smooth;
+    font-family: "Poppins";
+    /* font-weight: 700; */
+    /*font-style: none   ;*/
+
+}
+
+.mainHeading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-80%) translateY(-50%);
+    -webkit-transform: translate(-80%, -50%);
+    transform: translate(-80%, -50%);
+    font-size: 6rem;
+
+    border-top: 10px solid #fff;
+    transition:width 1s, height 1s, transform 1s,left 1s,top 1s,font-size 1s  ;
+    color:#fff;
+}
+
+.Welcome{
+    border: 0;
+    left: 40%;
+    top: 30%;
+    font-size: 3rem;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+.headerAfter{
+    font-size: 1rem;
+    border-top: 0;
+    top:30px;
+    left: 40px;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+}
+
+section{
+    width: 100%;
+    height: 100%;
+    /*background: #FFEFBA; !* fallback for old browsers *!*/
+    /*background: -webkit-linear-gradient(to top, #FFFFFF, #FFEFBA); !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to top, #FFFFFF, #FFEFBA); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    
+}
+
+.welcome_page{
+    top:0px;
+    position: fixed;
+    transition: background-color 2s;
+    background: rgba(0, 0, 0, .8);
+
+}
+
+
+/*css for the loding icons*/
+.gooey {
+    position: absolute;
+
+    left: 50%;
+    width: 142px;
+    height: 40px;
+    margin: -20px 0 0 -71px;
+    background: #fff;
+    filter: contrast(20);
+    transition: opacity 5s;
+    bottom:25px
+}
+.invisible{
+    opacity: 0;
+}
+.gooey .dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 12px;
+    left: 15px;
+    filter: blur(4px);
+    background: #000;
+    border-radius: 50%;
+    transform: translateX(0);
+    animation: dot 2.8s infinite;
+    -webkit-animation: dot 2.8s infinite;
+}
+.gooey .dots {
+    transform: translateX(0);
+    margin-top: 12px;
+    margin-left: 31px;
+    animation: dots 2.8s infinite;
+    -webkit-animation: dots 2.8s infinite;
+}
+.gooey .dots span {
+    display: block;
+    float: left;
+    width: 16px;
+    height: 16px;
+    margin-left: 16px;
+    filter: blur(4px);
+    background: #000;
+    border-radius: 50%;
+}
+
+.gooeywhite {
+    background:transparent;
+    filter: contrast(1);
+
+}
+.gooeywhite .dot{
+    background:#fff;
+    filter: blur(0px);
+}
+.gooeywhite .dots{
+    background:#fff;
+}
+
+.gooeywhite .dots span{
+    background:#fff;
+    filter: blur(0px);
+}
+@-moz-keyframes dot {
+    50% {
+        transform: translateX(96px);
+    }
+}
+@-webkit-keyframes dot {
+    50% {
+        transform: translateX(96px);
+    }
+}
+@-o-keyframes dot {
+    50% {
+        transform: translateX(96px);
+    }
+}
+@keyframes dot {
+    50% {
+        transform: translateX(96px);
+    }
+}
+@-moz-keyframes dots {
+    50% {
+        transform: translateX(-31px);
+    }
+}
+@-webkit-keyframes dots {
+    50% {
+        transform: translateX(-31px);
+    }
+}
+@-o-keyframes dots {
+    50% {
+        transform: translateX(-31px);
+    }
+}
+@keyframes dots {
+    50% {
+        transform: translateX(-31px);
+    }
+}
+
+.white_transition{
+    top: 100vh;
+    position: fixed;
+
+
+}
+
+/*envolope css*/
+
+/* input box fix with classes */
+
+.searchbox{
+    position: absolute;
+    border-radius:  24px;
+    border: none;
+    height: 35px;
+    width: 90vw;
+    
+    border:1px solid #dfe1e5;
+    outline:none;
+    left: 50%;
+    transform:translateX(-50%);
+    top: 30px;
+    background: #fff;
+    text-align: center;
+    color:#222;
+    
+}
+.searchbox:hover{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,.28); 
+    border-color: rgba(223, 225, 229,0);
+}
+.searchbox:focus{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,.28); 
+    border-color: rgba(223, 225, 229,0);
+
+}
+.searchbox_holder{
+    position: relative;
+    background: #fff;
+    width: 100%;
+    height: 210px;
+    border:0px 3px 0px 0px solid #dfe1e5;
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 0 5px 5px rgba(0,0,0,0.22);
+}
+
+.suggestion_holder{
+    position: relative;
+    width: 90vw;
+    height: 35px;
+    top:80px;
+    left: 50%;
+    transform:translateX(-50%);
+
+}
+
+.suggestions{
+    border-radius:  24px;
+    border: none;
+    font-size: .7rem;
+    height: 30px;
+    border:1px solid #1A73E8;
+    outline:none;
+    background: #fff;
+    color:#1A73E8;
+    padding-top: .39rem !important;
+}
+.title_holder{
+    position: absolute;
+    top:130px;
+    left:5vw;
+}
+.title_text{
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size:4rem;
+}
+/* card css */
+.card {
+    background: #fff;
+    border-radius: 2px;
+    display: inline-block;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px; 
+  }
+  
+  .card-expand{
+    width: 600px
+  }
+
+  .card-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .card-1:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+
+  .custom_container{
+    position: relative;
+    width: 90vw;
+    outline:none;
+    left:5vw;
+    overflow-y: scroll;
+    overflow-x:hidden; 
+    height: 73vh;
+    /* left: 50%; */
+    /* transform:translateX(-50%); */
+
+  }
+
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.card-full{
+    width:90%;
+    left:50%;
+    transform: translateX(-50%);
+    height:68vh
+}
+.col_terminal{
+    padding-right: 0;
+    border-right:1px solid rgba(0,0,0,.125)
+}
+
+.cli_file{
+    padding-left: 0;
+    border-top:1px solid rgba(0,0,0,.125)
+
+}
+.cli_output{
+    padding-left: 0;
+    
+}
+
+.btn-rounded-custom{
+    border-radius: 24px;
+}
+
+.last_line_cmd{
+    border: none;
+}
+
+.last_line_cmd:focus{
+    border: none;
+        outline:none;
+}
+
+.card_body_custom{
+    white-space: pre-wrap;
+    overflow-y: scroll;
+
+}
+
+.right-move{
+    right:10px
+}
+
+.vrcenter{
+    position: absolute;
+    font-size: 8rem;
+    top:33vh;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+.img_custom{
+
+    position: absolute;
+    font-size: 8rem;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.graph_custom {
+    position: absolute;
+    height: 100%;
+    width:90%;
+    top:15vh;
+}
+.large-text{
+    font-size: 10rem;
+}
+.mrcenter{
+    position: absolute;
+    font-size: 4rem;
+    top:10vh;
+    left:50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+}
+
+.ytvideo{
+    height: 100%;
+    width:90%;
+    top:15vh;
+}
+
+#handle2 .rs-handle  {
+    background-color: transparent;
+    border: 8px solid transparent;
+    border-right-color: black;
+    margin: -8px 0 0 14px !important;
+}
+#handle2 .rs-handle:before  {
+    display: block;
+    content: " ";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background: black;
+    right: -6px;
+    bottom: -6px;
+    border-radius: 100%;
+}
+#handle2 .rs-handle:after  {
+    display: block;
+    content: " ";
+    width: 106px;
+    position: absolute;
+    top: -1px;
+    right: 0px;
+    border-top: 2px dotted black;
+}
+#handle2 .rs-range-color  {
+    background-color: #000;
+}
+#handle2 .rs-path-color  {
+    background-color: #838383;
+}
+
+.card-servo{
+    width:32% !important;
+    left:50%;
+    transform: translateX(-50%);
+    height:68vh
+}

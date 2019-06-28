@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  /* font-family: 'Sahitya', serif; */
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  padding: 2rem;
+
+  
+  width: 100wh;
+  height: 90vh;
+  color: rgb(43, 39, 39);
+ /*  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); */
+ /* background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%); */
+ background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+  background-size: 400% 400%;
+ 
+  
+}
+
+.topnav {
+  margin-bottom: auto;
+  margin-top: auto;
+  height: 60px;
+  background-color: #353b48;
+  opacity: 0.2; 
+  border-radius: 30px;
+  padding: 10px;
+}
+
+.inputbox {
+  /* margin-bottom: 10px;
+  margin-top: 5px; */
+  height: 30px;
+  background-color: rgba(54, 60, 73,0.2);
+  
+  border-radius: 30px;
+  padding: 10px;
+  line-height: 10px;
+  color: rgba(0, 0, 0,1);
+  
+}
+
+
+/* .inputbox .inputtext{
+  
+} */
+
+.current{
+  margin-top: 5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  
+  font-family: 'Roboto Mono', monospace;
+  font-display: bold; 
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: left;
+  padding: 1rem 2rem 1rem;
+}
+
+h2 {
+  margin: 0 0 0.5rem 0;
+}
+
+p {
+  margin: 0 0 0.5rem 0;
+}
+
+p.lead {
+  font-size: 125%;
+  max-width: 600px;
+  text-align: center;
+  margin: 0 auto 3rem;
+}
+
+ul {
+  padding-left: 1rem;
+}
+
+.all-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card1 {
+  width: 30%;
+  height:250px;
+  display: block;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
+  margin: calc(10% / 6);
+  position: relative;
+}
+
+.card2 {
+  width: 50%;
+  height:250px;
+  display: block;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
+  margin: calc(10% / 6);
+  position: relative;
+}
+
+.card2 .pagedot{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1;
+  background: rgba(43, 39, 39, 0.6);
+  width: 20px;
+  height: 20px;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.25);
+  
+  border-radius: 100%;
+  color:  rgb(238, 244, 255);
+  font-weight: 200;
+  text-align: center;
+  
+}
+
+
+
+@media (max-width: 800px) {
+  .card {
+    width: 48%;
+    margin: calc(4% / 4);
+  }
+}
+
+@media (max-width: 500px) {
+  .card {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+}
+
+.card-text {
+  padding: 1rem;
+  width: 90%;
+
+}

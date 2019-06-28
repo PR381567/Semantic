@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Document</title>
+    <style>
+        #myVideo {
+            position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
+    min-width: 100%;
+    min-height: 100%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+	    transform: translate(-50%, -50%);
+        }
+        .fullscreen-bg {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            overflow: hidden;
+            z-index: -100;
+        }
+    </style>
+     <script src="https://www.gstatic.com/firebasejs/6.0.0/firebase.js"></script>
+</head>
+<body>
+    
+    <div class="fullscreen-bg">
+            <video muted  id="myVideo">
+                    <source src="Video1.mp4" type="video/mp4">
+            </video>
+    </div>
+
+
+    <script src="firebase.js"></script>
+    <script src="main.js"></script>    
+
+</body>
+</html>
